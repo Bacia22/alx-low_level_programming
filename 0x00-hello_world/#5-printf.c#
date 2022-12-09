@@ -1,7 +1,7 @@
-#include <stdio.h>
+x#include <stdio.h>
 /**
  *main - Entry
- *Return: Alwys 0 (Success)
+ *Return: Alwys 0
  */
 int main(void)
 {
