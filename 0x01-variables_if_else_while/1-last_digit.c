@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <sldio.h>
+
 /**
 * main - Entry point
 * Return: Always 0 (Success)
