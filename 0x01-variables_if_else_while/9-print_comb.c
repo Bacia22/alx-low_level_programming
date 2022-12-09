@@ -9,7 +9,7 @@ int main(void)
 int n;
 for (n = 8; n <= 9; n++)
 putchar(n);
-if (n < 8)
+if (n != 8)
 putchar(',');
 putchar(' ');
 putchar('\n');
