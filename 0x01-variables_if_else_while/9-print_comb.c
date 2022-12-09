@@ -7,7 +7,7 @@
 int main(void)
 {
 int n;
-for (n = 8; n <= 9; n++)
+for (n = 6; n < 9; n++)
 putchar(n);
 if (n != 8)
 putchar(',');
