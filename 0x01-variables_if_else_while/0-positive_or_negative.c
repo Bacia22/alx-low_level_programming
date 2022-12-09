@@ -1,32 +1,21 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
- *main - main function to generate a random number
- *
- *Return: ALways 0 (Success)
- *
- */
+* main - Entry
+* Description - Prints if random generated number is +tive, zero or -tive
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
 int n;
-int num;
-
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-printf("Last digit  of %d is ", n);
-num = n % 10;
-if (num > 5)
-{
-printf("%d and is greater than 5\n", num);
-}
-else  if ((num < 6) &&  (num < 0))
-{
-printf("%d and is less than 6 and not 0\n", num);
-}
+if (n < 0)
+printf("%d is negative\n", n);
+else if (n == 0)
+printf("%d is zero\n", n);
 else
-{
-printf("%d and is 0\n", num);
-}
-return (0);
+printf("%d is positive\n", n);
+return (o);
 }
