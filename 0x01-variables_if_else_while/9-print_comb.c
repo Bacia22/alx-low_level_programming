@@ -7,9 +7,12 @@
 int main(void)
 {
 int n;
-for (n = 48; n < 58; n++)
-putchar(n);
-if (n != 57)
+int m;
+for (n = 0; n <= 9; n++)
+for (m = n + 1; m <= 9; m++)
+putchar(n + '0');
+putchar(m + '0');
+if (n < 8)
 putchar(',');
 putchar(' ');
 putchar('\n');
