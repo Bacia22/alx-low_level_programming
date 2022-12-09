@@ -1,14 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
-#include <sldio.h>x
+#include <sldio.h>
 /**
-* main - Entry
-* Return Always 0 (Success)
+* main - Entry point
+* Return: Always 0 (Success)
 */
 int main(void)
 {
 int n, lastNum;
-
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 lastNUM = n % 10;
