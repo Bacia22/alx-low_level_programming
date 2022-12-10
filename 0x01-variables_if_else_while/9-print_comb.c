@@ -6,12 +6,12 @@
 */
 int main(void)
 {
-int n;
-for (n = 6; n < 9; n++)
-putchar(n);
-if (n != 8)
+int c = 0;
+while (c < 10)
+putchar(48 + c);
+if (n != 9)
 putchar(',');
 putchar(' ');
-putchar('\n');
 return (0);
+c++;
 }
