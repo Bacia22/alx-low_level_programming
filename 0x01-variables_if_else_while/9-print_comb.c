@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
 * main - prints all combination of single digits
@@ -6,12 +7,12 @@
 */
 int main(void)
 {
-int a;
-for (a = 0; a < 10; a++)
-putchar(a + '0');
-if (a != 9)
+int c = 0;
+while (c < 10)
+putchar(48 + c);
+if (c != 9)
 putchar(',');
 putchar(' ');
-putchar('\n');
+c++;
 return (0);
 }
