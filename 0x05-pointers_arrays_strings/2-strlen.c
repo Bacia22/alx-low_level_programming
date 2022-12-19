@@ -1,6 +1,6 @@
 #include "mian.h"
 /**
-* _strlen - return the length of a string
+* _strlen - returns the length of a string
 * @s: string
 * Return: length
 */
@@ -13,3 +13,4 @@ len++;
 s++;
 }
 return (len);
+}
