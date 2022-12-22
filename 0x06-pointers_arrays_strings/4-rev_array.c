@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* reverse_array -recerse a int array
+* reverse_array -reverse a int array
 * @a: pointer
-*@n: array length
+* @n: array length
 * Return: void
 */
 void reverse_array(int *a, int n)
