@@ -2,7 +2,7 @@
 /**
 * print_number - print numbers chars
 * @n: integer params
-* Return: c
+* Return: 0
 */
 void print_number(int n)
 {
