@@ -1,0 +1,1 @@
+This is seventh pointer, array and strings
