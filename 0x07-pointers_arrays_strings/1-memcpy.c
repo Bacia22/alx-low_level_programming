@@ -13,7 +13,7 @@ unsigned int j = 0;
 while (i < n)
 {
 *(dest + i) = *(src + j);
-i += i;
+i += 1;
 j += 1;
 }
 return (dest);
