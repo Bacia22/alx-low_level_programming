@@ -1,0 +1,7 @@
+#ifndef main_h
+#define main_h
+/**
+* File: main.h
+* Description: Header file containing prototypes for all fuctions
+*/
+
