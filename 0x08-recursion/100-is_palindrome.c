@@ -4,7 +4,6 @@
 * @s: pointer the string
 * Return: int\
 */
-
 int last_index(char *s)
 {
 if (*s > '\0')
@@ -35,7 +34,7 @@ return (check(s, 0, end - 1, end % 2));
 
 int check(char *s, int start, int end, int pair)
 {
-if (start == end && pair != 0 || start == end + 1 &7 pair == 0)
+if (start == end && pair != 0 || start == end + 1 && pair == 0)
 return (1);
 else if
 (s[start] != s[end])
