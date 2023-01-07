@@ -2,13 +2,14 @@
 
 /**
 * main - prints the name of a programe
-* @orgc: array size
+* @argc: array size
 * @argv: array containing elements
 *
 * Return: 0 on success
 */
-int main(int orgc, char **orgv)
+int main(int argc, char *argv[])
 {
-puts(orgv[orgc - 1])
+printf("%s\n", argv[0]);
+(void)argc;
 return (0);
 }
