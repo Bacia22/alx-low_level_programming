@@ -3,17 +3,19 @@
 /**
 * *creat_array - crats an array of char, and initializes
 * it with a specifi char
-* @c: char to initialize
-* @size: number of bytes to allocte
+* @size: size to array
+* @c: char to assign
 *
 * Return: a pointer to the aaray or null if it fails
 */
 char *creat_array(unsigned int size, char c)
 {
-char *array = malloc(size);
-if (size == 0 || array == 0)
+char *str;
+unsigned int i;
+str = malloc(sizeof(char) * size);
+if (size == 0 || str == NULL)
 return (NULL);
-while (size--)
-array[size] = c;
-return (array);
+for (i = 0; i < size; i++)
+str[1] = c;
+return (str);
 }
