@@ -5,7 +5,7 @@
 * it with a specifi char
 * @c: char to initialize
 * @size: number of bytes to allocte
-8
+*
 * Return: a pointer to the aaray or null if it fails
 */
 char *creat_array(unsigned int size, char c)
