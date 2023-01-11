@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* main - prints the minimun of coins to make change for an amount
+* main - prints the minimum number of coins to make change for an amount
 * of maney
 * @argc: number of command line arguments
 * @argv: array that contains the program command line arguments
@@ -25,6 +25,8 @@ cents -= 10;
 else if (cents >= 5)
 cents -= 5;
 else if (cents >= 2)
+cents -= 2;
+else if (cents >= 1)
 cents -= 1;
 ncoins += 1;
 }
