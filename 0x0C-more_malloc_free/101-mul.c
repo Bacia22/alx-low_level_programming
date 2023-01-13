@@ -30,7 +30,6 @@ printf("0\n");
 exit(0);
 }
 }
-
 /**
 * _initialize_array - set memery to zero in a new array
 * @ar: char array.
@@ -46,7 +45,6 @@ ar[i] = '0';
 ar[lar] = '\0';
 return (ar);
 }
-
 /**
 * _checknum - determines length of the number
 * and checks if number is in base 10.
