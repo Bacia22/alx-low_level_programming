@@ -16,7 +16,7 @@ next = (*head)->next;
 (*head)->next = prev;
 prev = *head;
 *head = next;
+}
 *head = prev;
 return (*head);
-}
 }
