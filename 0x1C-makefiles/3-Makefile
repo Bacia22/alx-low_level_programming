@@ -7,7 +7,7 @@ RM = rm -f
 %.o: %(SRC)
 	$(CC) -c -o $@ $<
 
-all: %(OBJ)
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
