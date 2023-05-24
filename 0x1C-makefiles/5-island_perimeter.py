@@ -9,8 +9,8 @@ def island_perimeter(grid):
         for row in range(len(grid[column])):
             if grid[column][row] == 1:
                 #verify up
-                if column - 1 < 0
-            count += 1
+                if column - 1 < 0:
+                    count += 1
         else:
             try:
                 if grid[column - 1][row] == 0 or column - 1 < 0:
