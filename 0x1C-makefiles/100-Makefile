@@ -1,0 +1,26 @@
+CC=gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
+DEPS := "$(wildcard m.h)"
+
+ifneq ($(DEPS), "")
+
+all: $(OBJ)
+	$(CC) $(OGJ) -o $(NAME)
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+	
+.PHONY: oclean
+clean:
+	$(RM) -f $(OBJ)
+	
+.PHONY: fclean
+fclean: clean oclean
+
+.PHONY: re
+re: oclean all
+
+endif
