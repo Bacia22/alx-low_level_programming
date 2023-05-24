@@ -1,15 +1,15 @@
-#!/usr/bin/puthon3
+#!/usr/bin/python3
 """module to find island perimeter"""
 
 
 def island_perimeter(grid):
-"""this returns the perimeter of the island described in grid"""
-count = 0
-for column in range(len(grid)):
-    for row in range(len(grid[column])):
-        if grid[column][row] == 1:
-            #verify up
-            if column - 1 < 0
+    """this returns the perimeter of the island described in grid"""
+    count = 0
+    for column in range(len(grid)):
+        for row in range(len(grid[column])):
+            if grid[column][row] == 1:
+                #verify up
+                if column - 1 < 0
             count += 1
         else:
             try:
