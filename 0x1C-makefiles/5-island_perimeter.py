@@ -1,44 +1,37 @@
 #!/usr/bin/python3
-"""module to find island perimeter"""
+"""
+Task 5 Return the perimeter of the island described in grid.
+"""
 
 
 def island_perimeter(grid):
-    """that returns the perimeter of the island described in grid"""
-    count = 0
-    for column in range(len(grid)):
-        for row in range(len(grid[column])):
-            if grid[column][row] == 1:
-                # verify up
-                if column - 1 < 0:
-                    count += 1
-                else:
-                    try:
-                        if grid[column - 1][row] == 0 or column - 1 < 0:
-                            count += 1
-                    except:
-                        pass
-                # verify down
-                if column + 1 > len(grid) - 1:
-                    count += 1
-                else:
-                    try:
-                        if grid[column + 1][row] == 0:
-                            count += 1
-                    except:
-                        pass
-                # verify right
-                if row + 1 > len(grid[column]) - 1:
-                    count += 1
-                else:
-                    try:
-                        if grid[column][row + 1] == 0:
-                            count += 1
-                    except:
-                        pass
-                # verify left
+    """Method tha returns the perimeter of the island described in grid."""
+    # p = perimeter, i = iteration 1, j = iteration2
+    p = 0
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            if grid[i][j] == 1:
                 try:
-                    if grid[column][row - 1] == 0 or row - 1 < 0:
-                        count += 1
-                except:
-                    pass
-    return count
+                    if grid[i - 1][j] == 0 or i == 0:
+                        p += 1
+                except IndexError:
+                    p += 1
+
+                try:
+                    if grid[i + 1][j] == 0:
+                        p += 1
+                except IndexError:
+                    p += 1
+
+                try:
+                    if grid[i][j - 1] == 0 or j == 0:
+                        p += 1
+                except IndexError:
+                    p += 1
+
+                try:
+                    if grid[i][j + 1] == 0:
+                        p += 1
+                except IndexError:
+                    p += 1
+    return p
