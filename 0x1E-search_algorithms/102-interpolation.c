@@ -3,12 +3,13 @@
 /**
  * interpolation_search - searches for a value in an array of integers
  *
- * @array: a ppointer to the first element of the array to search in
- * @size: the  number of elements in array
+ * @array: a pointer to the first element of the array to search in
+ * @size: the number of elements in array
  * @value: the value to search for
  *
- * Return: the fisrt where is located or -1 on failure or not found
+ * Return: the first where value is located or -1 on failure or not found
  */
+
 int interpolation_search(int *array, size_t size, int value)
 {
 	size_t i = 0, low = 0, high = size - 1;
@@ -19,15 +20,16 @@ int interpolation_search(int *array, size_t size, int value)
 		{
 			i = low + (((double)(high - low) /
 						(array[high] - array[low])) * (value - array[low]));
+
 			if (i > size)
 			{
-				printf("Value checked array[%lu] is out of the range\n", i);
+				printf("Value checked array[%lu] is out of range\n", i);
 				break;
 			}
 
 			printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 
-			if (array[]i < value)
+			if (array[i] < value)
 				low = i + 1;
 			else if (array[i] > value)
 				high = i - 1;
@@ -35,5 +37,6 @@ int interpolation_search(int *array, size_t size, int value)
 				return (i);
 		}
 	}
+
 	return (-1);
 }
